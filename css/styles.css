@@ -88,15 +88,29 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.link.current{
+  position: relative;
+}
+.link.current::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom:-1px;
+  backgro und-color: #404bbf;
+ width: 100%;
+ height: 4px;
+ border-radius: 2px;
+}
 .page-nav .link:hover,
-.page-nav .link:focus {
+.page-nav .link:focus,
+.link.current {
   color: #404bbf;
 }
 .address {
   font-style: normal;
 }
 .address .link {
-  font-size: 16px;
+  font-size: 16px; 
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -111,6 +125,11 @@ img {
 .title {
   background-color: #2e2f42;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.4),
+rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
 }
 .title h1 {
   font-family: "Roboto";
@@ -144,7 +163,6 @@ img {
 .my-button:focus {
   background-color: #404bbf;
 }
-/*features*/
 .visually-hidden {
   position: absolute;
   margin: -1px;
