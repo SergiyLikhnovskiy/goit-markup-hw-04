@@ -369,22 +369,38 @@ align-items: center;
   padding-top: 16px;
 }
 
-.footer-social{
-  Display: flex;
-align-items: center;
-width: 100%;
-justify-content: space-between;
-padding-bottom: 32px;
-padding-left: 16px;
-padding-right: 16px;
-list-style: none;
+.footer-social {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 32px;
+  padding-left
+  padding-right: 16px;
+  list-style: none;
 }
-.foter-social li{
-display: inline-flex;
-justify-content: center;
-align-items: center;
+.footer-social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #404bbf;
   border-radius: 50%;
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
+.social-media{
+   font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+padding-bottom: 16px;
+}
+.bank{
+display: flex;
+justify-content: flex-start;
+}
+.media{
+padding: 0 120px;
