@@ -302,7 +302,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social{
-color: #F4F4FD;
+fill: #F4F4FD;
 }
 .social li:hover{
   background-color: #31D0AA;
@@ -448,7 +448,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon{
-color: #F4F4FD;
+fill: #F4F4FD;
 }
 .footer-social li:hover,
 .footer-social .link:focus{
