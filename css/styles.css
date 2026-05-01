@@ -82,12 +82,14 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .link {
   color: #434455;
 }
 .link.current {
   position: relative;
+  color: #404bbf;
 }
 .link.current::after {
   content: "";
@@ -120,6 +122,7 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
   margin-left: auto;
@@ -187,7 +190,7 @@ address {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .my-button:hover,
 .my-button:focus {
@@ -291,8 +294,9 @@ address {
 .team-social-icon {
   fill: #f4f4fd;
 }
-.social-link:hover {
-  background-color: #31d0aa;
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
   cursor: pointer;
 }
 
@@ -416,6 +420,11 @@ address {
 .footer-social {
   display: flex;
   align-items: baseline;
+}
+footer .social-link:hover,
+footer .social-link:focus {
+  background-color: #31d0aa;
+  cursor: pointer;
 }
 .footer-container {
   margin-right: 120px;
